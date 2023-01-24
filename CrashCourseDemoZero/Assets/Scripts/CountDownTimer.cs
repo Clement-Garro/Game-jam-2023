@@ -7,7 +7,7 @@ public class CountDownTimer : MonoBehaviour
     Image timerBar;
     public float maxTime = 5f;
     public float TimeLeft;
-
+    bool timerIsRunning = true;
     public Text TimerText;
 
     void Start()
@@ -18,7 +18,9 @@ public class CountDownTimer : MonoBehaviour
 
     void Update()
     {
-        if(TimeLeft > 0)
+        if (timerIsRunning)
+        {
+            if (TimeLeft > 0)
             {
                 TimeLeft -= Time.deltaTime;
                 UpdateTimer(TimeLeft);
@@ -28,6 +30,7 @@ public class CountDownTimer : MonoBehaviour
             {
                 TimeLeft = 0;
             }
+        }
     }
 
     void UpdateTimer(float currentTime)
@@ -38,5 +41,13 @@ public class CountDownTimer : MonoBehaviour
         float seconds = Mathf.FloorToInt(currentTime % 60);
         
         TimerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+    public void StopTimer()
+    {
+        timerIsRunning = false;
+    }
+    public void StartTimer()
+    {
+        timerIsRunning = true;
     }
 }

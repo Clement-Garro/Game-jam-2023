@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    [SerializeField] PlayerController player;
+    [SerializeField] int damage;
     Animator animator;
     public float health = 1;
     public float speed = 1;
@@ -49,6 +51,7 @@ public class Enemy : MonoBehaviour
         {
             //l'enemy ce deplace vers le joueur a t'elle vitesse
             
+            //si la box collider du joueur touche la box collider de l'enemy alors le joueur prend des degats
         }
     }
     public void LockMovement()
@@ -58,5 +61,11 @@ public class Enemy : MonoBehaviour
     public void UnlockMovement()
     {
         canMove = true;
+    }
+    
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        Debug.Log("Collision");
+        player.getHit(damage);
     }
 }
