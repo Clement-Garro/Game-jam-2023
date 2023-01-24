@@ -12,15 +12,19 @@ public class PlayerController : MonoBehaviour
     public Vector2 lastDirection;
     public bool canMove = true;
     public SwordAttack swordAttack;
-
+    public GameObject inventaire;
+    public GameObject hotbar;
+    bool boolInventory, boolHotbar;
     Vector2 movement;
     SpriteRenderer spriteRenderer;
-
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        inventaire = GameObject.Find ("Inventaire");
+        hotbar = GameObject.Find ("HotBar");
     }
 
     private void Update()
@@ -31,6 +35,13 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
+        
+        boolInventory = inventaire.activeSelf;
+        boolHotbar = hotbar.activeSelf;
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            Inventory();
+        }
     }
 
     private void FixedUpdate()
@@ -99,5 +110,23 @@ public class PlayerController : MonoBehaviour
     {
         UnlockMovement();
         swordAttack.StopAttack();
+    }
+    
+    //function 
+    public void Inventory()
+    {
+        //affiche le canvas de l'inventaire
+        //si l'inventaire est ouvert, le ferme
+        //si l'inventaire est fermé, l'ouvre
+        if (boolInventory)
+        {
+            inventaire.SetActive(false);
+            hotbar.SetActive(true);
+        }
+        else
+        {
+            inventaire.SetActive(true);
+            hotbar.SetActive(false);
+        }
     }
 }
