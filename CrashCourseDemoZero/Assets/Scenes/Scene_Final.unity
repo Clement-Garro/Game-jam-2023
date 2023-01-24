@@ -2591,7 +2591,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 4.703125
+  orthographic size: 3.75
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -8096,8 +8096,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ButtonUI_CloseEscMenu, Assembly-CSharp
+      - m_Target: {fileID: 806289866}
+        m_TargetAssemblyTypeName: ButtonUI_Back_Game, Assembly-CSharp
         m_MethodName: PlayButton
         m_Mode: 1
         m_Arguments:
