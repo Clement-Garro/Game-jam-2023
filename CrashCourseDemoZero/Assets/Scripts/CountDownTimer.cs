@@ -4,8 +4,8 @@ using UnityEngine.UI;
 
 public class CountDownTimer : MonoBehaviour
 {
-    private Image timerBar;
-    public float maxTime;
+    Image timerBar;
+    public float maxTime = 5f;
     public float TimeLeft;
 
     public Text TimerText;
