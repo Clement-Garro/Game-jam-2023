@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     public SwordAttack swordAttack;
     Vector2 movement;
     SpriteRenderer spriteRenderer;
-    
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -98,6 +98,11 @@ public class PlayerController : MonoBehaviour
     {
         UnlockMovement();
         swordAttack.StopAttack();
+    }
+
+    public void SetMove(bool move)
+    {
+        canMove = move;
     }
     
 }
