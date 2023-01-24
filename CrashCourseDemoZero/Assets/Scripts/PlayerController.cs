@@ -31,6 +31,23 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            slot = 0;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            slot = 1;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            slot = 2;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            slot = 3;
+        }
+        
     }
 
     private void FixedUpdate()
@@ -67,7 +84,6 @@ public class PlayerController : MonoBehaviour
                 animator.SetTrigger("spell2");
                 break;
         }
-        
     }
 
     public void LockMovement()
