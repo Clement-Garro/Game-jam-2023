@@ -7,11 +7,13 @@ public class HUDController : MonoBehaviour
     [SerializeField] GameObject panel;
     [SerializeField] GameObject hotbar;
     [SerializeField] GameObject esc;
+    [SerializeField] GameObject hud;
     [SerializeField] PlayerController player;
     [SerializeField] GameObject enemy;
     public void PlayButton(){
         esc.SetActive(false);
         hotbar.SetActive(true);
+        hud.SetActive(true);
         player.UnlockMovement();
     }
 
