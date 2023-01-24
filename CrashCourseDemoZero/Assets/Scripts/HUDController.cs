@@ -9,7 +9,7 @@ public class HUDController : MonoBehaviour
     [SerializeField] GameObject esc;
     [SerializeField] GameObject hud;
     [SerializeField] PlayerController player;
-
+    [SerializeField] GameObject enemy;
     public void PlayButton(){
         esc.SetActive(false);
         hotbar.SetActive(true);
@@ -51,7 +51,15 @@ public class HUDController : MonoBehaviour
             }
         }
     }
-
+    
+    //fonction qui permet d'instancier une liste d'Enemy[] par le gameObject qui contient tout les enemy
+    public void freezeEnemy(){
+        Enemy[] enemies = enemy.GetComponentsInChildren<Enemy>();
+        foreach (Enemy e in enemies)
+        {
+            e.LockMovement();
+        }
+    }
 }
 
 
