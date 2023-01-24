@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class HealthSystem : MonoBehaviour
 {
+    public CountDownTimer timer;
+    public float temps = 30f;
     public int health;
     public int numOfHearts;
     
@@ -45,7 +47,8 @@ public class HealthSystem : MonoBehaviour
         health -= damage;
         if (health <= 0)
         {
-            Debug.Log("Player is dead");
+            Debug.Log("Game Over");
+            timer.EnleverTemps(temps);
         }
     }
 }

@@ -29,6 +29,8 @@ public class CountDownTimer : MonoBehaviour
             else
             {
                 TimeLeft = 0;
+                timerIsRunning = false;
+                // Exécutez l'instruction recommencer la partie
             }
         }
     }
@@ -49,5 +51,9 @@ public class CountDownTimer : MonoBehaviour
     public void StartTimer()
     {
         timerIsRunning = true;
+    }
+    public void EnleverTemps(float temps)
+    {
+        TimeLeft -= temps;
     }
 }
