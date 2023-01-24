@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class ButtonUI : MonoBehaviour
 {
-    [SerializeField] private string start = "Scene_Start";
+    [SerializeField] private string cible;
     public void PlayButton(){
-        SceneManager.LoadScene(start);
+        SceneManager.LoadScene(cible);
     }
 }
