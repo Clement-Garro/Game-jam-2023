@@ -7311,7 +7311,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 3.75
+  orthographic size: 3.459375
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -93134,8 +93134,8 @@ Tilemap:
   - first: {x: -2, y: -13, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 33
-      m_TileSpriteIndex: 33
+      m_TileIndex: 41
+      m_TileSpriteIndex: 41
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -103399,7 +103399,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: dd1f3cfad72ab1346802c64adaf69113, type: 2}
   - m_RefCount: 201
     m_Data: {fileID: 11400000, guid: c9abb927769b27b47b0016c8dd86c9d9, type: 2}
-  - m_RefCount: 250
+  - m_RefCount: 249
     m_Data: {fileID: 11400000, guid: d871993ae69fed54b848e11b86e6390a, type: 2}
   - m_RefCount: 23
     m_Data: {fileID: 11400000, guid: 2e583ebd2f944524a80f7ea8f71701ae, type: 2}
@@ -103415,7 +103415,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: fb7567f74df984f4b9180f93ea1f4074, type: 2}
   - m_RefCount: 34
     m_Data: {fileID: 11400000, guid: ee99eec829e285f4b8fa277604523b60, type: 2}
-  - m_RefCount: 12
+  - m_RefCount: 13
     m_Data: {fileID: 11400000, guid: f93da5b466268b54d9ee4c92becc56a9, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 35c7d08fec83dab4c824cd97df66a6cb, type: 2}
@@ -103504,7 +103504,7 @@ Tilemap:
     m_Data: {fileID: -1951580877, guid: 6e44ebc4894c74bbd862a624678ec182, type: 3}
   - m_RefCount: 201
     m_Data: {fileID: -2100107887, guid: 6e44ebc4894c74bbd862a624678ec182, type: 3}
-  - m_RefCount: 250
+  - m_RefCount: 249
     m_Data: {fileID: -2022875387, guid: 6e44ebc4894c74bbd862a624678ec182, type: 3}
   - m_RefCount: 23
     m_Data: {fileID: 1366174388, guid: f5ffaea831bc24049a00ec4adbdfc8e3, type: 3}
@@ -103520,7 +103520,7 @@ Tilemap:
     m_Data: {fileID: 815172935, guid: e4aa4e3fedfcb454fac534625d8aae64, type: 3}
   - m_RefCount: 34
     m_Data: {fileID: 997819729, guid: e4aa4e3fedfcb454fac534625d8aae64, type: 3}
-  - m_RefCount: 12
+  - m_RefCount: 13
     m_Data: {fileID: 871069212, guid: e4aa4e3fedfcb454fac534625d8aae64, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -1747956550, guid: e4aa4e3fedfcb454fac534625d8aae64, type: 3}
@@ -104032,6 +104032,7 @@ MonoBehaviour:
   hotbar: {fileID: 191802358}
   esc: {fileID: 602721587}
   player: {fileID: 998053214}
+  hud: {fileID: 0}
 --- !u!1 &2013874596
 GameObject:
   m_ObjectHideFlags: 0
