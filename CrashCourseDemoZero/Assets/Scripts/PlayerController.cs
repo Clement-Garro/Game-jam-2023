@@ -100,9 +100,4 @@ public class PlayerController : MonoBehaviour
         swordAttack.StopAttack();
     }
 
-    public void SetMove(bool move)
-    {
-        canMove = move;
-    }
-    
 }
