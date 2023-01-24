@@ -104,8 +104,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6021199662483906727}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.45, y: 0.45, z: 0.45}
+  m_LocalPosition: {x: 0.049, y: 0.049, z: 0}
+  m_LocalScale: {x: 0.49900496, y: 0.49900496, z: 0.49900496}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1611685228357688899}
@@ -212,8 +212,6 @@ MonoBehaviour:
   lastDirection: {x: 0, y: 0}
   canMove: 1
   swordAttack: {fileID: 1699073927115498138}
-  inventaire: {fileID: 0}
-  hotbar: {fileID: 0}
 --- !u!50 &491340151721641495
 Rigidbody2D:
   serializedVersion: 4
@@ -294,3 +292,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 0}
+  hotbar: {fileID: 0}
