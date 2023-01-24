@@ -131,10 +131,4 @@ public class PlayerController : MonoBehaviour
         UnlockMovement();
         swordAttack.StopAttack();
     }
-
-    public void getHit(int damage)
-    {
-        //le joueur c fait taper booo nuuuullll
-        healthSystem.health--;
-    }
 }

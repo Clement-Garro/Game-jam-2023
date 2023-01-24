@@ -5,8 +5,9 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public HealthSystem healthSystem;
     [SerializeField] PlayerController player;
-    [SerializeField] int damage;
+    [SerializeField] int damage = 1;
     Animator animator;
     public float health = 1;
     public float speed = 1;
@@ -63,9 +64,12 @@ public class Enemy : MonoBehaviour
         canMove = true;
     }
     
-    void OnCollisionEnter2D(Collision2D col)
+    private void OnCollisionEnter2D(Collision2D col)
     {
-        Debug.Log("Collision");
-        player.getHit(damage);
+        if (col.gameObject.tag == "Player")
+        {
+            Debug.Log("Collision");
+            healthSystem.TakeDamage(damage);
+        }
     }
 }
