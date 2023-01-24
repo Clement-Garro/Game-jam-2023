@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     public Vector2 lastDirection;
     public bool canMove = true;
     public SwordAttack swordAttack;
+    [SerializeField] HealthSystem healthSystem;
     Vector2 movement;
     SpriteRenderer spriteRenderer;
     int slot = 0;
@@ -115,4 +116,9 @@ public class PlayerController : MonoBehaviour
         swordAttack.StopAttack();
     }
 
+    public void getHit(int damage)
+    {
+        //le joueur c fait taper booo nuuuullll
+        healthSystem.health--;
+    }
 }
