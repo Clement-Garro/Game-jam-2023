@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     public SwordAttack swordAttack;
     Vector2 movement;
     SpriteRenderer spriteRenderer;
-
+    int slot = 0;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -51,7 +51,22 @@ public class PlayerController : MonoBehaviour
 
     void OnFire()
     {
-        animator.SetTrigger("swordAttack");
+        switch (slot)
+        {
+            case 0:
+                animator.SetTrigger("handAttack");
+                break;
+            case 1:
+                animator.SetTrigger("swordAttack");
+                break;
+            case 2:
+                animator.SetTrigger("spell1");
+                break;
+            case 3:
+                animator.SetTrigger("spell2");
+                break;
+        }
+        
     }
 
     public void LockMovement()
