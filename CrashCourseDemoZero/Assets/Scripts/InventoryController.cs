@@ -6,20 +6,21 @@ public class InventoryController : MonoBehaviour
 {
     [SerializeField] GameObject panel;
     [SerializeField] GameObject hotbar;
-    [SerializeField] GameObject player;
+    [SerializeField] PlayerController player;
     private void Update()
-{
-    if (Input.GetKeyDown(KeyCode.I))
     {
-        panel.SetActive(!panel.activeInHierarchy);
-        hotbar.SetActive(!hotbar.activeInHierarchy);
-        if (!panel.activeSelf)
+        if (Input.GetKeyDown(KeyCode.I))
         {
-            player.setMove(false);
-        } else
-        {
-            player.setMove();
+            panel.SetActive(!panel.activeInHierarchy);
+            hotbar.SetActive(!hotbar.activeInHierarchy);
+            if (panel.activeInHierarchy)
+            {
+                player.LockMovement();
+            }
+            else
+            {
+                player.UnlockMovement();
+            }
         }
     }
-}
 }
