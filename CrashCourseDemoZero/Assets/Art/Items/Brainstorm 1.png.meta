@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 68fb98867a1514409bed3757184a7c72
+guid: 8c4f01e496cbd2348b0832254a6de5df
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,64 +117,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: icons32x32_0
+      name: Brainstorm 1_0
       rect:
         serializedVersion: 2
-        x: 260
-        y: 516
-        width: 24
-        height: 24
+        x: 1849
+        y: 1947
+        width: 135
+        height: 152
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3d3729530c4cc742b376a1aefc9ccac
-      internalID: 1565132318
+      spriteID: f484884103a80b241a4fe147e1d5b94c
+      internalID: -1270778464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: icons32x32_1
+      name: Brainstorm 1_1
       rect:
         serializedVersion: 2
-        x: 290
-        y: 577
-        width: 28
-        height: 28
+        x: 2183
+        y: 2656
+        width: 102
+        height: 117
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55e0920afa217ce409a1341e215f1508
-      internalID: 675229804
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: icons32x32_2
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 804
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 60a826cb6bd352d40844486878486a30
-      internalID: -1691233345
+      spriteID: 685a705538195424ebcd177881385133
+      internalID: -1888033165
       vertices: []
       indices: 
       edges: []
@@ -183,16 +162,15 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      icons32x32_2: -1691233345
-      icons32x32_0: 1565132318
-      icons32x32_1: 675229804
+      Brainstorm 1_1: -1888033165
+      Brainstorm 1_0: -1270778464
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

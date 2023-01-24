@@ -9,10 +9,19 @@ public class HUDController : MonoBehaviour
     [SerializeField] GameObject esc;
     [SerializeField] PlayerController player;
     bool isPaused = false;
+
+    public void PlayButton(){
+        esc.SetActive(false);
+        hotbar.SetActive(true);
+        player.UnlockMovement();
+        isPaused = false;
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.I))
         {
+            Debug.Log(isPaused);
             if (isPaused==false)
             {
             panel.SetActive(!panel.activeInHierarchy);
