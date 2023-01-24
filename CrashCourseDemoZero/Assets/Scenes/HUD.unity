@@ -1685,7 +1685,7 @@ RectTransform:
   - {fileID: 79953209}
   - {fileID: 108421926}
   m_Father: {fileID: 829429749}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2508,7 +2508,7 @@ RectTransform:
   - {fileID: 784786719}
   - {fileID: 1191448149}
   m_Father: {fileID: 829429749}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2739,7 +2739,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 4.703125
+  orthographic size: 3.75
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2926,6 +2926,7 @@ MonoBehaviour:
   hotbar: {fileID: 1454072314}
   esc: {fileID: 255690482}
   player: {fileID: 975659601}
+  hud: {fileID: 784786718}
 --- !u!1 &598405498
 GameObject:
   m_ObjectHideFlags: 0
@@ -4411,8 +4412,8 @@ RectTransform:
   m_Children:
   - {fileID: 1955020490}
   - {fileID: 1454072315}
-  - {fileID: 255690483}
   - {fileID: 491091586}
+  - {fileID: 255690483}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
