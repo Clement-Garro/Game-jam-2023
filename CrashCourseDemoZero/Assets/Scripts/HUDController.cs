@@ -11,12 +11,6 @@ public class HUDController : MonoBehaviour
     [SerializeField] CountDownTimer timer;
     [SerializeField] PlayerController player;
     [SerializeField] GameObject enemy;
-    public void PlayButton(){
-        esc.SetActive(false);
-        hotbar.SetActive(true);
-        hud.SetActive(true);
-        player.UnlockMovement();
-    }
 
     private void Update()
     {
