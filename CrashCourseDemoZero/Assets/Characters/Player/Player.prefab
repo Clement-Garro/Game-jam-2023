@@ -293,3 +293,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panel: {fileID: 0}
   hotbar: {fileID: 0}
+  esc: {fileID: 0}
+  player: {fileID: 3833592104346459840}
