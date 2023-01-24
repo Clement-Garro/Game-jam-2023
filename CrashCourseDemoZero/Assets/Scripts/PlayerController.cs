@@ -100,4 +100,10 @@ public class PlayerController : MonoBehaviour
         UnlockMovement();
         swordAttack.StopAttack();
     }
+    
+    //function qui permet d'ouvrir l'inventaire si la touche "i" est pressée
+    // private void OnInventory()
+    // {
+    //     Inventory.instance.OpenCloseInventory();
+    // }
 }
