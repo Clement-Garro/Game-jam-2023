@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class CountDownTimer : MonoBehaviour
 {
     Image timerBar;
-    public float maxTime = 5f;
+    public float maxTime = 500f;
     public float TimeLeft;
     bool timerIsRunning = true;
     public Text TimerText;

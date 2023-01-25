@@ -38,6 +38,7 @@ public class TriggerCoffre : MonoBehaviour
                 Coffre1.SetActive(false);
                 CoffreOuvert.SetActive(true);
                 toucher = true;
+                
             }
 
             if (TriggerBoss.IsTouching(player) && toucherboss == false)
@@ -47,19 +48,6 @@ public class TriggerCoffre : MonoBehaviour
                 Boss.SetActive(true);
                 boss.UnlockMovement();
                 toucherboss = true;
-            }
-
-            if (boss.health <= 0)
-            {
-                //passage a la map suivante
-                //debloque l'armure du joueur
-                //gagne un coeur
-                player1.C = true;
-                player1.D = true;
-                SceneManager.LoadScene("Scene_Epoque_2");
-                //player1.gameObject Armor_2=true;
-                player1.gameObject.
-                player1.gameObject.SetActive(true);
             }
         }
     }

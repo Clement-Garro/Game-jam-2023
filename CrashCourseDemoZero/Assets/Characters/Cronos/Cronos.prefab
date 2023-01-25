@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4529629834358896661}
   - component: {fileID: 1999321114260372607}
   - component: {fileID: 4928515940523212551}
+  - component: {fileID: 5768396061928734946}
   - component: {fileID: 8982302299757974275}
   - component: {fileID: 8690208949374096897}
   - component: {fileID: 8966942156823620803}
@@ -89,6 +90,23 @@ MonoBehaviour:
   B: 0
   C: 0
   D: 0
+--- !u!114 &5768396061928734946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648749818483889001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84fed1afb9dd489b96c4d845abbfb400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player1: {fileID: 0}
+  healthSystem: {fileID: 0}
+  Armor2: {fileID: 0}
+  player: {fileID: 0}
+  slime: {fileID: 0}
 --- !u!114 &8982302299757974275
 MonoBehaviour:
   m_ObjectHideFlags: 0
