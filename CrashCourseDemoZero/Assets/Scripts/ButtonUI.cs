@@ -10,4 +10,8 @@ public class ButtonUI : MonoBehaviour
         SceneManager.LoadScene(cible);
     }
 
+    public void doExitGame() {
+        Application.Quit();
+    }
 }
+

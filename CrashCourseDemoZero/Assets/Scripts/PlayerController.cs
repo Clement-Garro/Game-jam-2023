@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed = 2f;
+    [SerializeField] float moveSpeed;
     public Rigidbody2D rb;
     public Animator animator;
     public Vector2 lastDirection;
@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
     Vector2 movement;
     SpriteRenderer spriteRenderer;
     int slot = 0;
+    public bool sprint = false, A=true, B=false ,C=false, D=false;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -31,23 +33,37 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            slot = 0;
+        
+        course();
+        
+        if(A==true){
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                slot = 0;
+            }
         }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            slot = 1;
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            slot = 2;
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            slot = 3;
+
+        if(B==true){
+            if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                slot = 1;
+            }
         }
         
+        if(C==true){
+            if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                slot = 2;
+            }
+        }
+        
+        if(D==true){
+            if (Input.GetKeyDown(KeyCode.Alpha4))
+            {
+                slot = 3;
+            }
+        }
+
     }
 
     private void FixedUpdate()
@@ -125,10 +141,27 @@ public class PlayerController : MonoBehaviour
             //     break;
         }
     }
-    
+
     public void EndSwordAttack()
     {
         UnlockMovement();
         swordAttack.StopAttack();
+    }
+
+    public void course()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            sprint = true;
+        }
+        else if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            sprint = false;
+        }
+        if (sprint==true)
+        {
+            moveSpeed = 5f;
+        }
+        else moveSpeed = 1f;
     }
 }
