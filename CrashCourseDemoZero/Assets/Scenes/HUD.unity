@@ -10469,9 +10469,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e4a8bde72d574640ba712dbb8c99820, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelFader: {fileID: 0}
-  timer: {fileID: 0}
+  timer: {fileID: 784786722}
+  deathScreen: {fileID: 1631484612}
+  deathText: {fileID: 1631484612}
+  timeUpText: {fileID: 1191448146}
   temps: 30
+  duration: 2
   health: 2
   numOfHearts: 3
   hearts:
@@ -10646,8 +10649,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ab5a76151072884f963761cc9849dc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 1631484618}
-  healthSystem: {fileID: 1622734028}
 --- !u!95 &1631484618
 Animator:
   serializedVersion: 5
