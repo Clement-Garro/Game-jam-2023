@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class TriggerCoffre : MonoBehaviour
     {
         [SerializeField] PlayerController player1;
+        [SerializeField] GameObject SwordPlayer;
         [SerializeField] Collider2D player;
         [SerializeField] Collider2D Coffre;
         [SerializeField] GameObject Coffre1;
@@ -30,6 +31,9 @@ public class TriggerCoffre : MonoBehaviour
             {
                 print("sa marche");
                 sword.SetActive(true);
+                SwordPlayer.SetActive(true);
+                player1.gameObject.SetActive(false);
+                player1.gameObject.SetActive(true);
                 player1.B = true;
                 Coffre1.SetActive(false);
                 CoffreOuvert.SetActive(true);
@@ -53,6 +57,9 @@ public class TriggerCoffre : MonoBehaviour
                 player1.C = true;
                 player1.D = true;
                 SceneManager.LoadScene("Scene_Epoque_2");
+                //player1.gameObject Armor_2=true;
+                player1.gameObject.
+                player1.gameObject.SetActive(true);
             }
         }
     }
