@@ -10,6 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4529629834358896661}
   - component: {fileID: 1999321114260372607}
+  - component: {fileID: 4928515940523212551}
+  - component: {fileID: 8982302299757974275}
+  - component: {fileID: 8690208949374096897}
+  - component: {fileID: 8966942156823620803}
   m_Layer: 0
   m_Name: Cronos
   m_TagString: Untagged
@@ -58,6 +62,86 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &4928515940523212551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648749818483889001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b2de725524bb4ea7aa460f586705d3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1
+  rb: {fileID: 0}
+  animator: {fileID: 1999321114260372607}
+  lastDirection: {x: 0, y: 0}
+  canMove: 1
+  swordAttack: {fileID: 8982302299757974275}
+  healthSystem: {fileID: 8690208949374096897}
+  sprint: 0
+  A: 1
+  B: 0
+  C: 0
+  D: 0
+--- !u!114 &8982302299757974275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648749818483889001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b230192f4f27f43c1a8eaa5a7aa5565d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swordCollider: {fileID: 0}
+  damage: 4
+--- !u!114 &8690208949374096897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648749818483889001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e4a8bde72d574640ba712dbb8c99820, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: {fileID: 0}
+  deathScreen: {fileID: 0}
+  deathText: {fileID: 0}
+  timeUpText: {fileID: 0}
+  temps: 60
+  duration: 2
+  health: 3
+  numOfHearts: 3
+  hearts: []
+  fullHeart: {fileID: 0}
+  emptyHeart: {fileID: 0}
+--- !u!114 &8966942156823620803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648749818483889001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeaa07abef18a2e4cb7c366531ede0db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 0}
+  hotbar: {fileID: 0}
+  esc: {fileID: 0}
+  hud: {fileID: 0}
+  timer: {fileID: 0}
+  player: {fileID: 4928515940523212551}
+  enemy: {fileID: 0}
 --- !u!1001 &515115055904628704
 PrefabInstance:
   m_ObjectHideFlags: 0
