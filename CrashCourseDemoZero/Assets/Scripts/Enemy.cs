@@ -72,4 +72,9 @@ public class Enemy : MonoBehaviour
             healthSystem.TakeDamage(damage);
         }
     }
+
+    public void setActive(bool b)
+    {
+        gameObject.SetActive(b);
+    }
 }
