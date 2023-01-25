@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     Vector2 movement;
     SpriteRenderer spriteRenderer;
     int slot = 0;
-    public bool sprint = false;
+    public bool sprint = false, A=true, B=false ,C=false, D=false;
 
     void Start()
     {
@@ -36,24 +36,32 @@ public class PlayerController : MonoBehaviour
         
         course();
         
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            slot = 0;
+        if(A==true){
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                slot = 0;
+            }
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            slot = 1;
+        if(B==true){
+            if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                slot = 1;
+            }
         }
-
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            slot = 2;
+        
+        if(C==true){
+            if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                slot = 2;
+            }
         }
-
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            slot = 3;
+        
+        if(D==true){
+            if (Input.GetKeyDown(KeyCode.Alpha4))
+            {
+                slot = 3;
+            }
         }
 
     }
