@@ -1,1 +1,1 @@
-# unity-codegamejam-iut
+# Code Game Jam - IUT 2023
