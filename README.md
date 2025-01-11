@@ -1,1 +1,1 @@
-# Code Game Jam - IUT 2022
+# Code Game Jam - IUT 2023
